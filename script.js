@@ -6,10 +6,11 @@ class Book {
         this.author = author;
         this.pages = pages;
         this.read = read;
-        this.getInfo = function () {
-            let information = `${title} by ${author}, ${pages}, ${read}`;
-            return information;
-        };
+    };
+
+    getInfo() {
+        let information = `${this.title} by ${this.author}, ${this.pages}, ${this.read}`;
+        return information;
     }
 };
 
