@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="addBookSection">
+            <h1>Add a book</h1>
+            <form action="" class="form">
+                <fieldset class="formSection">
+                    <label for="bookTitle">Book Title</label>
+                    <input type="text" id="bookTitle" name="bookTitle" minlength="2" required>
+                </fieldset>
+
+                <fieldset class="formSection">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" minlength="2" required>
+                </fieldset>
+
+                <fieldset class="formSection">
+                    <label for="pagesNumber">Number of pages</label>
+                    <input type="number" id="pagesNumber" name="pagesNumber" required>
+                </fieldset>
+
+                <fieldset class="formSection">
+                    <legend>Have you read the book ?</legend>
+                    <input type="radio" id="yesAnswer" name="isRead" value=true>
+                    <label for="yesAnswer">Yes</label>
+
+                    <input type="radio" id="noAnswer" name="isRead" value=false>
+                    <label for="noAnswer">No</label>
+                </fieldset>
+
+                <button id="addBookButton" type="submit">Add new book</button>
+
+            </form>
+        </div>
+        <div class="libraryDisplay">
+            <h1>My library</h1>
+            <div class="libraryList"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
